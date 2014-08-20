@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>0.3-beta</version>
+    <title>$title$</title>
+    <authors>Jonas Eriksson</authors>
+    <owners>Jonas Eriksson</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Generate type (linqpad or cs code file) and csv for any IEnumerable</description>
+    <releaseNotes>Prerelease</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Codegeneration Csv</tags>
+  </metadata>
+</package>
