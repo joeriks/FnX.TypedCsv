@@ -16,8 +16,8 @@ For example (in LinqPad, with AdventureWorks data):
     c:\users\jonas\documents\VEmployee.csv
     c:\users\jonas\documents\VEmployee.linq
 
-The first file is the csv with the data.
-And the other one is a linq-file that has the necessary type and function to open the csv and return an Enumerable, which you can open (simply copy the filename and open it), and then process further with linq:
+The first file is the csv with the data. And the other one is a linq-file with class and function to read the csv file.
+Simply copy the filename and open it in linqpad - then process it further with more linq:
 
     // Generated 2014-08-20 08:08:41
 
