@@ -8,6 +8,8 @@ Sort of a temporary table with linqpad.
 For example (in LinqPad, with AdventureWorks data):
 
     VEmployee.Take (100).ToTypedCsv()
+    
+(First install the nuget FnX.TypedCsv in linqpad, and add the FnX namespace.)    
 
 ####Result:
 
@@ -15,7 +17,7 @@ For example (in LinqPad, with AdventureWorks data):
     c:\users\jonas\documents\VEmployee.linq
 
 The first file is the csv with the data.
-And the other one is a linq-file that has the necessary type and function to open the csv and return an Enumerable:
+And the other one is a linq-file that has the necessary type and function to open the csv and return an Enumerable, which you can process further with linq:
 
     // Generated 2014-08-20 04:08:41
     void Main() {
@@ -40,6 +42,11 @@ Naturally you can specify the path (csv gets same path, but .csv extension):
     VEmployee.Take (100).ToTypedCsv(@"c:\data\mydata.linq") 
 
 It works with anonymous types aswell (they also get translated to regular types, with the inferred property types)
+
+You can also run it in Visual Studio (or anywhere) and generate cs-file instead of a linq:
+
+    VEmployee.Take (100).ToTypedCsv(@"c:\data\mydata.cs") 
+
 
 ####Known limitations
 Does only work with flat (csv) data (no complex types).
