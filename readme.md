@@ -1,6 +1,7 @@
-Nuget : FnX.TypedCsv 
+###Nuget : FnX.TypedCsv 
 
-Basic idea : dump any result from a LinqPad query to a csv-file and automatically generate type (class) and code to be able to get the data back typed.
+###Basic idea 
+Dump any result from a LinqPad query to a csv-file and automatically generate type (class) and code to be able to get the data back typed.
 
 Sort of a temporary table with linqpad.
 
@@ -8,13 +9,13 @@ For example (in LinqPad, with AdventureWorks data):
 
 VEmployee.Take (100).ToTypedCsv()
 
-Result:
+###Result:
 
-c:\users\jonas\documents\VEmployee.csv
-c:\users\jonas\documents\VEmployee.linq
+    c:\users\jonas\documents\VEmployee.csv
+    c:\users\jonas\documents\VEmployee.linq
 
-First the csv file with the data.
-And the other file is a linq-file that has the necessary type and function to open the csv and return an Enumerable:
+The first file is the csv with the data.
+And the other one is a linq-file that has the necessary type and function to open the csv and return an Enumerable:
 
     // Generated 2014-08-20 04:08:41
     void Main() {
@@ -37,3 +38,6 @@ Naturally you can specify the path (csv gets same path, but .csv extension):
 VEmployee.Take (100).ToTypedCsv(@"c:\data\mydata.linq") 
 
 It works with anonymous types aswell (they also get translated to regular types, with the inferred property types)
+
+###Known limitations
+Does only work with flat (csv) data (no complex types).
