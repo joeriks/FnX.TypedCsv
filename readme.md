@@ -1,9 +1,7 @@
 ####Nuget : FnX.TypedCsv 
 
 ####Basic idea 
-Dump any result from a LinqPad query to a csv-file and automatically generate type (class) and code to be able to get the data back typed.
-
-Sort of a temporary table with linqpad.
+Dump any result from a linq query to a csv-file and automatically generate type (class) and code to be able to get the data back strongly typed.
 
 For example (in LinqPad, with AdventureWorks data):
 
