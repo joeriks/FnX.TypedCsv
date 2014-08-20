@@ -3,6 +3,8 @@
 ####Basic idea 
 Dump any result from a linq query to a csv-file and automatically generate type (class) and code to be able to get the data back strongly typed.
 
+Useful when you want to dump a snapshot of data, to be able to process it further later. That way you don't need to fetch the data from your database more than necessary. Reading the csv-file snapshot is very fast (using the Nuget CsvHelper).
+
 For example (in LinqPad, with AdventureWorks data):
 
     VEmployee.Take (100).ToTypedCsv()
@@ -17,17 +19,21 @@ For example (in LinqPad, with AdventureWorks data):
 The first file is the csv with the data.
 And the other one is a linq-file that has the necessary type and function to open the csv and return an Enumerable, which you can process further with linq:
 
-    // Generated 2014-08-20 04:08:41
+    // Generated 2014-08-20 08:08:41
+
     void Main() {
         var vemployeeEnumerable=GetVEmployeeRecords(@"c:\users\jonas\documents\VEmployee.csv");
         vemployeeEnumerable.Dump();	        
     }
+    
+    
     public IEnumerable<VEmployee> GetVEmployeeRecords(string filePath){
         using (var reader = File.OpenText(filePath)) {
             var csvReader = new CsvHelper.CsvReader(File.OpenText(filePath));
             return csvReader.GetRecords<VEmployee>();
 	    }
         }	
+    
     public class VEmployee {
         public Int32 BusinessEntityID {get;set;}
         public String Title {get;set;}
