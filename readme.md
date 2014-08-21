@@ -11,6 +11,8 @@
 
 **How much time did I spend creating it:** few hours.
 
+**How much code:** ~50 LOCS.
+
 **Tools:** LinqPad (or VS).
 
 **Dependencies:** CsvHelper.
