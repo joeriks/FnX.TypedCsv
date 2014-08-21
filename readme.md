@@ -1,6 +1,8 @@
 ####Short info
 **Installation:** Nuget FnX.TypedCsv + add FnX namespace.
 
+**Usage:** YadaYada.Where(yadayada).OrderBy(yodayoda).Select(p=>new {foo=p.x, bar=p.y, bax=p.z}).ToTypedCsv(@"c:\data\yadayada.linq")
+
 **Status:** Works on my machine(s).
 
 **The problem it solves:** dump any result from a linq query to a csv-file and automatically generate type (class) and code to be able to get the data back strongly typed.
