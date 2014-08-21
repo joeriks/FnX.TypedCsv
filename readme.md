@@ -11,7 +11,7 @@
 
 **How much time did I spend creating it:** few hours.
 
-**How much code:** ~50 LOCS.
+**How much code:** < 100 LOCS.
 
 **Tools:** LinqPad (or VS).
 
