@@ -5,7 +5,7 @@
 
 **The problem it solves:** dump any result from a linq query to a csv-file and automatically generate type (class) and code to be able to get the data back strongly typed.
 
-**When do I use it myself:** when a customer asks me to extract and combine complex data from sql and I need to test and explore to get the correct output.
+**When do I use it myself:** when a customer asks me to extract and combine complex data from sql and I need to test and explore to get the correct output. With this I only need to bother the database once, and yet get the strong types to get a nice linqpad experience.
 
 **Alternative:** tsql queries + perhaps temporary tables.
 
