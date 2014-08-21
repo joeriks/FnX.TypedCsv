@@ -1,5 +1,5 @@
 ####Short info
-**Installation:** Nuget FnX.TypedCsv
+**Installation:** Nuget FnX.TypedCsv + add FnX namespace.
 
 **Status:** Works on my machine(s).
 
@@ -24,18 +24,17 @@ For example (in LinqPad, with AdventureWorks data):
 
     VEmployee.Take (100).ToTypedCsv()
     
-(First install the nuget FnX.TypedCsv in linqpad, and add the FnX namespace.)    
-
-    Result:
+Result:
 
     c:\users\jonas\documents\VEmployee.csv
     c:\users\jonas\documents\VEmployee.linq
 
 The first file is the csv with the data. And the other one is a linq-file with a class generated from the query result IEnumerable + a function to read the csv file.
+
 Simply copy the filename and open it in linqpad - then process it further with more linq.
 
 
-** The generated class (reflection) **
+**The generated class (reflection)**
 
     public class VEmployee {
         public Int32 BusinessEntityID {get;set;}
@@ -44,7 +43,7 @@ Simply copy the filename and open it in linqpad - then process it further with m
         ...
 
 
-** The generated sample code to read the csv and get the IEnumerable<T> **
+**The generated sample code to read the csv and get the IEnumerable<T>**
     
     void Main() {
     
