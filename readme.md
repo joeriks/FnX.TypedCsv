@@ -1,7 +1,17 @@
-####Nuget : FnX.TypedCsv 
+####Short info
+Nuget: FnX.TypedCsv
+
+The problem it solves: dump any result from a linq query to a csv-file and automatically generate type (class) and code to be able to get the data back strongly typed.
+
+When do I use it myself: when a customer asks me to extract and combine complex data from sql and I need to test and explore to get the correct output.
+
+Alternative: tsql queries + perhaps temporary tables.
+
+How much time did I spend creating it: few hours.
+
+Dependencies: CsvHelper.
 
 ####Basic idea 
-Dump any result from a linq query to a csv-file and automatically generate type (class) and code to be able to get the data back strongly typed.
 
 Useful when you want to dump a snapshot of data, to be able to process it further later with type information kept, for a nice linq experience. That way you don't need to fetch the data from your database more than necessary. Reading the csv-file snapshot is very fast (using the Nuget CsvHelper).
 
@@ -11,7 +21,7 @@ For example (in LinqPad, with AdventureWorks data):
     
 (First install the nuget FnX.TypedCsv in linqpad, and add the FnX namespace.)    
 
-####Result:
+    Result:
 
     c:\users\jonas\documents\VEmployee.csv
     c:\users\jonas\documents\VEmployee.linq
