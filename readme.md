@@ -1,7 +1,7 @@
 ####Short info
 **Installation:** Nuget FnX.TypedCsv + add FnX namespace.
 
-**Usage:** YadaYada.Where(yadayada).OrderBy(yodayoda).Select(p=>new {foo=p.x, bar=p.y, bax=p.z}).**ToTypedCsv(@"c:\data\yadayada.linq")**
+**Usage:** YadaYada.Where(yadayada).OrderBy(yodayoda).Select(p=>new {foo=p.x, bar=p.y, bax=p.z}).**ToTypedCsv(@"c:\my linqpad queries\some project\yadayada.linq")**
 
 **Status:** Works on my machine(s).
 
